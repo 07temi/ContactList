@@ -12,21 +12,37 @@ struct ContactRow: View {
     let person: Person
     
     var body: some View {
-        Button(action: { isPresented.toggle() }) {
-            HStack {
-                Text("\(person.name) \(person.surname)")
-                    .frame(width: 200, alignment: .leading)
+        VStack {
+            Text("\(person.name) \(person.surname)")
+                .font(.largeTitle)
+               // .padding()
+            List {
+                Image(systemName: person.picture)
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                Text("\(person.phone)")
             }
         }
-        .sheet(isPresented: $isPresented) {
-            MoreInfoScreen(isPresented: $isPresented, contactList: person)
+
+        
+//        Button(action: { isPresented.toggle() }) {
+//            HStack {
+//                Text("\(person.name) \(person.surname)")
+//                    .frame(width: 200, alignment: .leading)
+//            }
+//        }
+        
+//        .fullScreenCover(isPresented: $isPresented) {
+//            MoreInfoScreen(isPresented: $isPresented, contactList: person)
         }
+        
+    }
+
+
+
+struct ContactRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactRow(person: Person.getPersons()[1])
     }
 }
 
-
-//struct ContactRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContactRow()
-//    }
-//}

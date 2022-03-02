@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContactDetailScreen: View {
+    let contacts: [Person]
+    
     var body: some View {
-        Text("ContactsDetail")
+        NavigationView {
+            List(contacts, id: \.id) { contact in
+                    ContactDetailRow(person: contact)
+            }
+            .listStyle(.inset)
+            .navigationTitle("Contacts")
+        }
     }
 }
 
 struct ContactDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailScreen()
+        ContactDetailScreen(contacts: Person.getPersons())
     }
 }

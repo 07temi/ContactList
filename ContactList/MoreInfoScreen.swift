@@ -12,7 +12,7 @@ struct MoreInfoScreen: View {
     let contactList: Person
     
     var body: some View {
-        Text("\(contactList.name)")
+            Text("\(contactList.name) 1111")
     }
 }
 

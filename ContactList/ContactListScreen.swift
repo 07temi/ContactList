@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ContactListScreen: View {
     
-    let contacts = Person.getPersons()
+    let contacts: [Person]
     
     var body: some View {
         NavigationView {
             List(contacts, id: \.id) { contact in
-                ContactRow(person: contact)
-//                Text("\(contact.name) \(contact.surname)")
+                NavigationLink("\(contact.name) \(contact.surname)") {
+                    ContactRow(person: contact)
+                }
             }
+            .listStyle(.inset)
             .navigationTitle("Contacts")
         }
     }
@@ -25,6 +27,6 @@ struct ContactListScreen: View {
 
 struct CintactListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListScreen()
+        ContactListScreen(contacts: Person.getPersons())
     }
 }
