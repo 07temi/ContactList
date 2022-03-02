@@ -14,10 +14,10 @@
 		7D5267B427CE310300A61ED9 /* PersonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267B327CE310300A61ED9 /* PersonsModel.swift */; };
 		7D5267B627CE311100A61ED9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267B527CE311100A61ED9 /* DataManager.swift */; };
 		7D5267B827CE3CC800A61ED9 /* ContactListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267B727CE3CC800A61ED9 /* ContactListScreen.swift */; };
-		7D5267BA27CE3E4800A61ED9 /* ContactDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267B927CE3E4800A61ED9 /* ContactDetailScreen.swift */; };
-		7D5267BC27CE577300A61ED9 /* MoreInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267BB27CE577300A61ED9 /* MoreInfoScreen.swift */; };
-		7D5267C227CF420500A61ED9 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267C127CF420500A61ED9 /* ContactRow.swift */; };
-		7D5267C427CF63DF00A61ED9 /* ContactDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267C327CF63DF00A61ED9 /* ContactDetailRow.swift */; };
+		7D5267BA27CE3E4800A61ED9 /* ContactSectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267B927CE3E4800A61ED9 /* ContactSectionScreen.swift */; };
+		7D5267C227CF420500A61ED9 /* ContactListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267C127CF420500A61ED9 /* ContactListRow.swift */; };
+		7D5267C427CF63DF00A61ED9 /* ContactSectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267C327CF63DF00A61ED9 /* ContactSectionRow.swift */; };
+		7D5267C627CFD94C00A61ED9 /* SectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5267C527CFD94C00A61ED9 /* SectionSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +29,10 @@
 		7D5267B327CE310300A61ED9 /* PersonsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsModel.swift; sourceTree = "<group>"; };
 		7D5267B527CE311100A61ED9 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7D5267B727CE3CC800A61ED9 /* ContactListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListScreen.swift; sourceTree = "<group>"; };
-		7D5267B927CE3E4800A61ED9 /* ContactDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailScreen.swift; sourceTree = "<group>"; };
-		7D5267BB27CE577300A61ED9 /* MoreInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoScreen.swift; sourceTree = "<group>"; };
-		7D5267C127CF420500A61ED9 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
-		7D5267C327CF63DF00A61ED9 /* ContactDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailRow.swift; sourceTree = "<group>"; };
+		7D5267B927CE3E4800A61ED9 /* ContactSectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionScreen.swift; sourceTree = "<group>"; };
+		7D5267C127CF420500A61ED9 /* ContactListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListRow.swift; sourceTree = "<group>"; };
+		7D5267C327CF63DF00A61ED9 /* ContactSectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionRow.swift; sourceTree = "<group>"; };
+		7D5267C527CFD94C00A61ED9 /* SectionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +72,10 @@
 				7D5267A127CE12BE00A61ED9 /* Assets.xcassets */,
 				7D5267A327CE12BE00A61ED9 /* Preview Content */,
 				7D5267B727CE3CC800A61ED9 /* ContactListScreen.swift */,
-				7D5267C127CF420500A61ED9 /* ContactRow.swift */,
-				7D5267BB27CE577300A61ED9 /* MoreInfoScreen.swift */,
-				7D5267B927CE3E4800A61ED9 /* ContactDetailScreen.swift */,
-				7D5267C327CF63DF00A61ED9 /* ContactDetailRow.swift */,
+				7D5267C127CF420500A61ED9 /* ContactListRow.swift */,
+				7D5267B927CE3E4800A61ED9 /* ContactSectionScreen.swift */,
+				7D5267C327CF63DF00A61ED9 /* ContactSectionRow.swift */,
+				7D5267C527CFD94C00A61ED9 /* SectionSet.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -161,12 +161,12 @@
 				7D5267A027CE12BD00A61ED9 /* ContentView.swift in Sources */,
 				7D5267B627CE311100A61ED9 /* DataManager.swift in Sources */,
 				7D5267B427CE310300A61ED9 /* PersonsModel.swift in Sources */,
-				7D5267BC27CE577300A61ED9 /* MoreInfoScreen.swift in Sources */,
 				7D5267B827CE3CC800A61ED9 /* ContactListScreen.swift in Sources */,
+				7D5267C627CFD94C00A61ED9 /* SectionSet.swift in Sources */,
 				7D52679E27CE12BD00A61ED9 /* ContactListApp.swift in Sources */,
-				7D5267BA27CE3E4800A61ED9 /* ContactDetailScreen.swift in Sources */,
-				7D5267C227CF420500A61ED9 /* ContactRow.swift in Sources */,
-				7D5267C427CF63DF00A61ED9 /* ContactDetailRow.swift in Sources */,
+				7D5267BA27CE3E4800A61ED9 /* ContactSectionScreen.swift in Sources */,
+				7D5267C227CF420500A61ED9 /* ContactListRow.swift in Sources */,
+				7D5267C427CF63DF00A61ED9 /* ContactSectionRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

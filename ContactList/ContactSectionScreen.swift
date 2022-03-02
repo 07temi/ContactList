@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ContactDetailScreen: View {
+struct ContactSectionScreen: View {
     let contacts: [Person]
     
     var body: some View {
         NavigationView {
             List(contacts, id: \.id) { contact in
-                    ContactDetailRow(person: contact)
+                    ContactSectionRow(person: contact)
             }
             .listStyle(.inset)
             .navigationTitle("Contacts")
@@ -23,6 +23,6 @@ struct ContactDetailScreen: View {
 
 struct ContactDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailScreen(contacts: Person.getPersons())
+        ContactSectionScreen(contacts: Person.getPersons())
     }
 }

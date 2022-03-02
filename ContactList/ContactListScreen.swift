@@ -15,7 +15,7 @@ struct ContactListScreen: View {
         NavigationView {
             List(contacts, id: \.id) { contact in
                 NavigationLink("\(contact.name) \(contact.surname)") {
-                    ContactRow(person: contact)
+                    ContactListRow(person: contact)
                 }
             }
             .listStyle(.inset)

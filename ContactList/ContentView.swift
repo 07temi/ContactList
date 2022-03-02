@@ -16,7 +16,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Contacts", systemImage: "person")
                 }
-            ContactDetailScreen(contacts: contacts)
+            ContactSectionScreen(contacts: contacts)
                 .tabItem {
                     Label("Detail", systemImage: "person.circle")
                 }
