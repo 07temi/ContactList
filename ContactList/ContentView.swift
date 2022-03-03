@@ -10,10 +10,6 @@ import SwiftUI
 struct ContentView: View {
     let contacts = Person.getPersons()
     
-//    никак не получилось поднять на вьюшке ContactListRow
-//    к верхнему краю экрана, как только не пробовал.
-//    и подвинуть Image без хардкода
-    
     var body: some View {
         TabView {
             ContactListScreen(contacts: contacts)
