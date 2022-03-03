@@ -14,7 +14,7 @@ struct ContactListScreen: View {
     var body: some View {
         NavigationView {
             List(contacts, id: \.id) { contact in
-                NavigationLink("\(contact.name) \(contact.surname)") {
+                NavigationLink("\(contact.fullName)") {
                     ContactListRow(person: contact)
                 }
             }

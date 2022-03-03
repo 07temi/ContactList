@@ -14,6 +14,7 @@ struct Person {
     let email: String
     let phone: String
     let picture: String
+    let fullName: String
 
 }
 
@@ -40,7 +41,8 @@ extension Person {
                 surname: surnames[index],
                 email: emails[index],
                 phone: phones[index],
-                picture: pictures
+                picture: pictures,
+                fullName: "\(names[index]) \(surnames[index])"
             )
             
             persons.append(person)

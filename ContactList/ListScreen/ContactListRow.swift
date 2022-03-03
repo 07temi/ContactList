@@ -16,20 +16,20 @@ struct ContactListRow: View {
             List {
                 Image(systemName: person.picture)
                     .resizable()
-                    .frame(width: 100, height: 100)
-                    .position(x: 130, y: 50)
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .padding(.leading)
 
                 SectionSet(text: person.phone, icon: "phone")
                 SectionSet(text: person.email, icon: "tray")
             }
-            .navigationTitle("\(person.name) \(person.surname)")
+            .navigationTitle("\(person.fullName)")
         }
     }
 }
     
-//struct ContactRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContactListRow(person: Person.getPersons()[1])
-//    }
-//}
+struct ContactRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactListRow(person: Person.getPersons()[1])
+    }
+}
 

@@ -12,16 +12,12 @@ struct SectionSet: View {
     let icon: String
     
     var body: some View {
-        HStack {
-            Image(systemName: icon)
-                .foregroundColor(.blue)
-            Text(text)
-        }
+        Label(text, systemImage: icon)
     }
 }
 
 struct SectionSet_Previews: PreviewProvider {
     static var previews: some View {
-        SectionSet(text: "", icon: "")
+        SectionSet(text: "preview", icon: "tray")
     }
 }
